@@ -1,13 +1,11 @@
 var grid = document.querySelector('.grid-container')
 var palette = document.querySelectorAll('.colorPalette')
-console.log(grid)
-
-var brushColor = ""
+var brushColor = ''
 
 for (let i=0; i<2622; i++) {
     var canvas = document.createElement('div')
     grid.appendChild(canvas)
-    canvas.setAttribute("class", "grid")
+    canvas.setAttribute('class', 'grid')
     canvas.addEventListener('click', changeBrush) 
 }
 
@@ -16,7 +14,7 @@ for (let i=0; i < palette.length; i++) {
 }
         
 function changeBrush(event) {
-    event.target.style.background = brushColor;
+    event.target.style.background = brushColor
 }
 
 function storePaletteColor(event) {
